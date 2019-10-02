@@ -67,6 +67,7 @@ h1 {
     border: solid black 5px;
     background-color: white;
     margin: 5px;
+    page-break-inside: avoid;
 }
 
 h2 {
