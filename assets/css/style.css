@@ -1,0 +1,16 @@
+body {
+    
+}
+
+.recent-search {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.wrap-buttons {
+    border: 5px solid grey;
+    border-radius: 10px;
+    margin: 5px;
+}
