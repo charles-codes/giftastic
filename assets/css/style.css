@@ -1,5 +1,36 @@
 body {
-    
+    background-image: url("comic.jpg");
+}
+
+h1 {
+    border: solid black 5px;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Notable', sans-serif;
+}
+
+#search {
+    margin: 5px;
+    border: solid black 5px;
+    border-radius: 15px;
+}
+
+#submit-button {
+    margin: 5px;
+    border: solid white 5px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+}
+
+#clear-results {
+    margin: 5px;
+    border: solid white 5px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
 }
 
 .recent-search {
@@ -10,7 +41,40 @@ body {
 }
 
 .wrap-buttons {
-    border: 5px solid grey;
+    border: 5px solid black;
     border-radius: 10px;
     margin: 5px;
+    background-color: white;
+    color: black;
+}
+
+.gifs-display {
+    column-count: 2;
+}
+
+.gif img {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+.giphy-info {
+    color: black;
+    font-size: 18px;
+}
+
+.giphy {
+    border: solid black 5px;
+    background-color: white;
+    margin: 5px;
+}
+
+h2 {
+    border: solid black 5px;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Notable', sans-serif;
+    min-height: 100%;
 }

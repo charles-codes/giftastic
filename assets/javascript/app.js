@@ -1,4 +1,4 @@
-var gifArrayButtons = ['thor', 'hulk', 'iron man', 'captain marvel', 'spiderman'];
+var gifArrayButtons = ['Thor', 'Hulk', 'Captain Marvel', 'Spiderman', 'Thanos', 'Black Widow'];
 
 var keyAPI = "zWPDG6GOC1W2I1tVDf5bZiuTNNq4RnHe"; 
 
@@ -50,7 +50,6 @@ function makeGifHolder(gif) {
                 data-still="${images.original_still.url}" 
                 data-animate="${images.original.url}" 
                 data-state="still">
-            <i class="fa fa-play img-play"></i>
         </div>
         <div class="giphy-info">
             <p>Rating: g</p>
@@ -62,6 +61,9 @@ function makeGifHolder(gif) {
 }
 
 function renderGifs(gifs) {
+
+    $(".gifs-display").empty();
+
     for (i = 0; i < gifs.length; i++) {
         var gif = gifs[i];
         var gifHolder = makeGifHolder(gif);
@@ -95,6 +97,38 @@ function searchGiphy(event) {
     console.log("Value: ", searchValue);
 };
 
+function imgClick() {
+    var gifCard = $(this);
+
+    var img = gifCard.find("img");
+    var playIcon = gifCard.find("i");
+
+    var still = img.attr("data-still");
+    var animate = img.attr("data-animate");
+    var state = img.attr("data-state");
+
+    if (state === "still") {
+        img.attr({
+            src: animate,
+            "data-state": "animate"
+        });
+    }
+    else {
+        img.attr({
+            src: still,
+            "data-state": "still"
+        })
+    }
+
+}
+
+function searchGifButton() {
+    var buttonName = $(this).attr("data-name");
+    grabGiphy(buttonName);
+}
+
 $(document).on("click", ".btn-delete", deleteButton);
+$(document).on("click", ".giphy-image", imgClick);
+$(document).on("click", ".btn-search", searchGifButton);
 
 $("#submit-button").on("click", searchGiphy);
