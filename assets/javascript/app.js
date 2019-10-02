@@ -2,7 +2,7 @@ var gifArrayButtons = ['Thor', 'Hulk', 'Captain Marvel', 'Spiderman', 'Thanos', 
 
 var keyAPI = "zWPDG6GOC1W2I1tVDf5bZiuTNNq4RnHe"; 
 
-var endpoint = "http://api.giphy.com/v1/gifs/search?api_key=zWPDG6GOC1W2I1tVDf5bZiuTNNq4RnHe&limit=10";
+var endpoint = "https://api.giphy.com/v1/gifs/search?api_key=zWPDG6GOC1W2I1tVDf5bZiuTNNq4RnHe&limit=10";
 
 function renderButtons() {
 
