@@ -38,12 +38,34 @@ function addButton(searchValue) {
     renderButtons();
 }
 
+function makeGifHolder(gif) {
+
+    var images = gif.images;
+    var holder = `
+    <div class="giphy">
+        <i data-id="${gif.id}">
+        <div class="giphy-image">
+            <img 
+                src="${images.original_still.url}" 
+                data-still="${images.original_still.url}" 
+                data-animate="${images.original.url}" 
+                data-state="still">
+            <i class="fa fa-play img-play"></i>
+        </div>
+        <div class="giphy-info">
+            <p>Rating: g</p>
+        </div>
+    </div>
+    `;
+
+    return holder;
+}
+
 function renderGifs(gifs) {
     for (i = 0; i < gifs.length; i++) {
         var gif = gifs[i];
-
-        var gifHolder = `
-        `
+        var gifHolder = makeGifHolder(gif);
+        $(".gifs-display").append(gifHolder);
     }
 }
 
@@ -54,10 +76,10 @@ function grabGiphy (searchValue) {
         .then(function(response) {
             var gifs = response.data;
             renderGifs(gifs);
-            console.log("Data: ", data);
+            console.log("Gifs: ", gifs);
         })
         .catch(function(error) {
-            console.log("Data: ", data);
+            console.log("Error: ", erros);
         });
 }
 
