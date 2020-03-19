@@ -27,6 +27,8 @@ https://mchellagnarls.github.io/giftastic/
 =================================================
 SCREENCAP:
 
+![Giftastic Image](giftasticapp.png) 
+
 =================================================
 
 
