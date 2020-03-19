@@ -21,7 +21,7 @@ Giftastic uses HTML5, CSS3, Bootstrap, JavaScript, and jQuery.
 
 LINKS:
 
-https://github.com/mchellagnarls/giftastic
+https://github.com/mchellagnarls/giftastic/
 https://mchellagnarls.github.io/giftastic/
 
 =================================================
