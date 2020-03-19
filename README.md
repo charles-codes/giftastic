@@ -29,9 +29,11 @@ SCREENCAP:
 
 ![Giftastic Image](giftasticapp.png) 
 
+
 =================================================
 
 
+Created by Charles Tuggle. 
 GitHub Profile: https://github.com/mchellagnarls
 Portfolio: https://mchellagnarls.github.io/website/
 
