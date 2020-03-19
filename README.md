@@ -3,7 +3,7 @@
 
 DESCRIPTION:
 
-Giftastic is a gif-finding web application that utilizes Giphy's public API to help you find cool gifs. 
+Giftastic is a web application that utilizes Giphy's public API to help you find and display cool gifs. 
 
 =================================================
 
